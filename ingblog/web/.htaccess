@@ -1,0 +1,8 @@
+#��ʾ��д���濪���ر�off�����þ��Ƿ���Ŀ�����ر����µ���䣬�����Ͳ���Ҫһ��һ����ע������ˡ�
+RewriteEngine on
+
+#������������˼��������ļ���·���ǲ����ڵģ�����ļ���·�����ڽ������Ѿ����ڵ��ļ���·��
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule . index.php
