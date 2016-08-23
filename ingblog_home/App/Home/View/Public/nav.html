@@ -1,0 +1,45 @@
+<!--header start here-->
+<!-- animated-css -->
+<link href="__PUBLIC__/css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="__PUBLIC__/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!-- animated-css -->
+<div class="header">
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="navbar-header">
+                    <div class="logo wow slideInLeft" data-wow-delay="0.3s">
+                        <a class="navbar-brand" href="index.html"><img src="__PUBLIC__/images/logo1.png" /></a>
+                    </div>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{:U('index')}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">首页 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{:U('index')}">Action</a></li>
+                                <li><a href="{:U('index')}">Another action</a></li>
+                                <li><a href="{:U('index')}">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="{:U('index')}">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="{:U('about')}" data-hover="我的相册">我的相册</a></li>
+                        <li><a href="{:U('services')}" data-hover="Services">Services</a></li>
+                        <li><a href="{:U('shortcodes')}" data-hover="Shortcodes">Shortcodes</a></li>
+                        <li><a href="{:U('portfolio')}" data-hover="Portfolio">Portfolio</a></li>
+                        <li><a href="{:U('contact')}" data-hover="Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </nav>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>

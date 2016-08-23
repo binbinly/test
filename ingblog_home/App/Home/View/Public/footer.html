@@ -1,0 +1,82 @@
+<!--footer start here-->
+<div class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="col-md-4 ftr-grd wow zoomIn" data-wow-delay="0.3s">
+                <h3>Get in Touch</h3>
+                <p>8901 ibero  Road</p>
+                <p>Nam libero tempore</p>
+                <p>Phone: +148 5746 415</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-4 ftr-grd wow zoomIn" data-wow-delay="0.3s">
+                <h3>Recent Post</h3>
+                <div class="ftr-sub-gd">
+                    <div class="col-md-4 ftr-gd1-img">
+                        <a href="single.html"><img src="__PUBLIC__/images/f1.jpg" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-md-8 ftr-gd1-text">
+                        <h4><a href="single.html">libero tempore soluta</a></h4>
+                        <p>Lorem Ipsum comes Lorem Ipsum comes</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="ftr-sub-gd">
+                    <div class="col-md-4 ftr-gd1-img">
+                        <a href="single.html"><img src="__PUBLIC__/images/f2.jpg" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-md-8 ftr-gd1-text">
+                        <h4><a href="single.html">voluptas assumenda</a></h4>
+                        <p>No one rejects dislikes it is pleasure</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="ftr-sub-gd">
+                    <div class="col-md-4 ftr-gd1-img">
+                        <a href="single.html"><img src="__PUBLIC__/images/f3.jpg" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-md-8 ftr-gd1-text">
+                        <h4><a href="single.html">dignissimos ducimus</a></h4>
+                        <p>Lorem Ipsum comes Lorem Ipsum comes</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="col-md-4 ftr-grd wow zoomIn" data-wow-delay="0.3s">
+                <h3>Join Our Newsletter</h3>
+                <form>
+                    <input type="text" value="Email"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"/>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<div class="copy-right wow slideInRight" data-wow-delay="0.3s">
+    <p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/move-top.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/easing.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+        });
+    });
+</script>
+<a href="javascript:;" id="toTop" style="display: none;"><span id="toTopHover" style="opacity: 1;"></span></a>
+<!--footer end here-->
+</body>
+</html>
