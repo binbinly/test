@@ -66,10 +66,11 @@ class UploadService extends BaseService
                     //生成缩略图
                     $this->thumb(Yii::$app->params['imagesDir'] . $newFileName);
                     if($file_id = $file_model->addFile($newFileName, $file)) {
-                        $this->images['id'] = $file_id;
-                        $this->images['time'] = date('Y-m-d', time());
-                        $this->images['url'] = BaseService::getTypeFileUrl($newFileName, 'imagesDir');
-                        $this->images['name'] = substr($file->name, 0, strrpos($file->name, '.'));
+                        $images['id'] = $file_id;
+                        $images['time'] = date('Y-m-d', time());
+                        $images['url'] = BaseService::getTypeFileUrl($newFileName, 'imagesDir');
+                        $images['name'] = substr($file->name, 0, strrpos($file->name, '.'));
+                        $this->images[] = $images;
                     }
                 }
             }

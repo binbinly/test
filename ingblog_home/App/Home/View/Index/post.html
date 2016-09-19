@@ -1,0 +1,22 @@
+<foreach name="post" item="item">
+    <div class="fitness-bottom">
+        <div class="col-md-3 fitness-lft wow zoomIn" data-wow-delay="0.3s">
+            <img src="{$item.cover_url}" alt="" class="img-responsive">
+        </div>
+        <div class="col-md-9 fitness-rit wow zoomIn" data-wow-delay="0.3s">
+            <p class="post_title"><a href="{:U('single', array('id'=>$item['id']))}">{$item.title}</a></p>
+            <p class="post_content">{$item.content|strip_tags|msubstr=0,300,'utf-8',true}</p>
+            <div class="row">
+                <div class="col-lg-8">
+                    <span class="datetime"><i class="glyphicon glyphicon-time"></i> {$item.ctime|date="Y-m-d",###}</span>
+                    &nbsp;&nbsp;
+                    <foreach name="item.tagList" item="tag">
+                        <a class="tags" href="{:U('search', array('tag'=>$tag['tag_id']))}"><i class="glyphicon glyphicon-tags"></i>{$tag.tagname}</a>
+                    </foreach>
+                </div>
+                <div class="col-lg-4 text-right post_detail"><a href="{:U('single', array('id'=>$item['id']))}" class="hvr-underline-from-left">查看详情</a></div>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</foreach>

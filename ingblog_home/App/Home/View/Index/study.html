@@ -1,0 +1,31 @@
+<include file="Public/header" />
+<!--header start here-->
+<!-- NAVBAR
+==================================================-->
+<include file="Public/nav" />
+<!--header end here-->
+
+<div class="portfolio">
+	<div class="container fitness-rit">
+			<if condition="ACTION_NAME eq 'search'">
+			<p class="h4 nav-html"><a href="{:U('index')}">首页</a> &gt; <a href="javascript:;">搜索</a></p>
+			<div class="text-center search_text">
+				<if condition="$keyword">
+					当前搜索关键字“{$keyword}”
+				<elseif condition="$cat_name"/>
+					当前搜索分类"{$cat_name}"
+				<elseif condition="$tag_name"/>
+					当前搜索标签"{$tag_name}"
+				</if>
+			</div>
+			<else/>
+			<div class="portfolio-top wow fadeInDownBig" data-wow-delay="0.3s">
+				<h1>学无止境</h1>
+				<p>书山有路勤为径，学海无涯苦作舟。</p>
+			</div>
+			</if>
+			<include file="post"/>
+		<div class="pages clearfix">{$page}</div>
+	</div>
+</div>
+<include file="Public/footer" />

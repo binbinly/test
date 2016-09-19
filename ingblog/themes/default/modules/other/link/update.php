@@ -22,7 +22,13 @@ $this->title = '添加友情链接';
             ]);?>
             <?=$form->field($model,'title')->textInput()?>
             <?=$form->field($model,'url')->textInput()?>
-            <?=$form->field($upload_model,'editor_img')->fileInput()?>
+            <?=$form->field($upload_model,'editor_img')->fileInput()->label('LOGO')?>
+            <? if($model->cover): ?>
+                <div class="form-group">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8"><img src="<?= \app\models\BaseService::getTypeFileUrl($model->cover, 'editorDir')?>"/></div>
+                </div>
+            <? endif; ?>
             <?=$form->field($model,'sort')->textInput()?>
             <?=$form->field($model,'descrip')->textInput()?>
             <?=$form->field($model,'status')->dropDownList([ '1'=>'启用','0'=>'禁用'])?>

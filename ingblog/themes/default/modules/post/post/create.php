@@ -139,8 +139,8 @@ $this->title = '添加文章';
                     </button>
                 </div>
             <div class="mail-text h-200">
-                <input type="hidden" name="PostService[content]" id="content" value="<?= $post_info['content']?>"/>
-                <div id="summernote"></div>
+                <input type="hidden" name="PostService[content]" id="content" value=""/>
+                <div id="summernote"><?= $post_info['content'];?></div>
                 <div class="clearfix"></div>
             </div>
             <div class="mail-body text-right tooltip-demo">
@@ -264,7 +264,6 @@ $this->title = '添加文章';
 //                ['height', ['height']]
 //            ]
         });
-        $('#summernote').summernote('code','<?= $post_info['content'];?>');
 
         //以下为修改jQuery Validation插件兼容Bootstrap的方法，没有直接写在插件中是为了便于插件升级
         $.validator.setDefaults({

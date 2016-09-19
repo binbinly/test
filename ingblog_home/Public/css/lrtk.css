@@ -1,0 +1,83 @@
+/* ����ͼ�� �Ѽ����� www.lanrentuku.com */
+
+html,
+body {
+  background: #ddd;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #333;
+  font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+  font-size: 14px;
+}
+#header {
+  margin: 0 auto;
+  width: 600px;
+}
+#header h1 {
+  color: #444;
+  float: left;
+  margin: 30px 30px 10px 0;
+  text-shadow: 2px 2px 0px #ccc;
+}
+#header h2 {
+  color: #444;
+  float: left;
+  font-size: 16px;
+  margin: 40px 0 0;
+}
+
+a,
+a:active,
+a:visited {
+  color: #e68523;
+  text-decoration: none;
+}
+a:hover {
+  color: #111;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.clearfix {
+  height: 1%;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+#content {
+  margin: 20px 0 10px;
+  padding: 10px 0;
+}
+
+/* image loading background image */
+
+#gallery {
+  visibility: hidden;
+}
+#gallery li.loading {
+  background: url(../images/spinner.gif) no-repeat center center;
+}
+
+
+/* image caption */
+
+p.fg-caption {
+  color: #999;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin: 0;
+  text-align: left;
+}
+
+.content{padding:20px 0;}

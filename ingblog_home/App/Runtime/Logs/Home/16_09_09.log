@@ -1,0 +1,3399 @@
+[ 2016-09-09T08:41:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/contact.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0075s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-09-09T08:42:07+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/photo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `blog_cat` [ RunTime:0.0085s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 28  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_post` WHERE `cat_id` IN ('28') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 28  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_post` WHERE `cat_id` IN ('28') ORDER BY ctime desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('50','46','45','44','43','42')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '40' ORDER BY t.count desc  [ RunTime:0.0025s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('40','39','38','37','36','35')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '39' ORDER BY t.count desc  [ RunTime:0.0105s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('34','32','31','30','29','28')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '38' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('28','23','24','27','26','25')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '37' ORDER BY t.count desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T08:42:39+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/study.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog_cat` [ RunTime:0.0085s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 29  [ RunTime:0.0165s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 30  [ RunTime:0.0005s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 31  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 32  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_post` WHERE `cat_id` IN ('29','30','31','32') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 29  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 30  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 31  [ RunTime:0.0130s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 32  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_post` WHERE `cat_id` IN ('29','30','31','32') ORDER BY ctime desc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '42' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '41' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '36' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '35' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '34' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '33' ORDER BY t.count desc  [ RunTime:0.0015s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '32' ORDER BY t.count desc  [ RunTime:0.0015s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '31' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '30' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '29' ORDER BY t.count desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T08:43:05+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/study/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `blog_cat` [ RunTime:0.0075s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 29  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 30  [ RunTime:0.0015s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 31  [ RunTime:0.0005s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 32  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_post` WHERE `cat_id` IN ('29','30','31','32') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 29  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 30  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 31  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 32  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_post` WHERE `cat_id` IN ('29','30','31','32') ORDER BY ctime desc LIMIT 10,10   [ RunTime:0.0015s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '28' ORDER BY t.count desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T08:43:16+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-09-09T08:43:17+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T08:43:17+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T08:43:17+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003501s ]
+
+[ 2016-09-09T08:43:17+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T08:43:17+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019003s ]
+
+[ 2016-09-09T08:43:17+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003500s ]
+
+[ 2016-09-09T09:00:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-09-09T09:00:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-09-09T09:00:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T09:00:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T09:00:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T09:00:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023003s ]
+
+[ 2016-09-09T09:00:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003501s ]
+
+[ 2016-09-09T09:01:03+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000501s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003501s ]
+
+[ 2016-09-09T09:01:04+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T09:01:04+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T09:01:04+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T09:01:04+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T09:01:04+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T09:01:04+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004501s ]
+
+[ 2016-09-09T09:01:19+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002501s ]
+
+[ 2016-09-09T09:01:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T09:01:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-09-09T09:01:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T09:01:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T09:01:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T09:01:21+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T09:01:35+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `blog_post` WHERE `cat_id` <> 28 ORDER BY ctime desc LIMIT 10   [ RunTime:0.0030s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '42' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '41' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '36' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '35' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '34' ORDER BY t.count desc  [ RunTime:0.0015s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '33' ORDER BY t.count desc  [ RunTime:0.0020s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '32' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '31' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '30' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '29' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_cat` [ RunTime:0.0060s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 28  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_post` WHERE `cat_id` IN ('28') ORDER BY ctime desc LIMIT 4   [ RunTime:0.0015s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('50','46','45','44','43','42')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '40' ORDER BY t.count desc  [ RunTime:0.0020s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('40','39','38','37','36','35')  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '39' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('34','32','31','30','29','28')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '38' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('28','23','24','27','26','25')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '37' ORDER BY t.count desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T09:01:43+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 42 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T09:01:43+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T09:01:43+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T09:01:43+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T09:01:44+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T09:01:44+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T09:01:44+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T09:06:03+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 42 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T09:06:04+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T09:06:04+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T09:06:04+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-09-09T09:06:04+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-09-09T09:06:04+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T09:06:04+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T14:32:10+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.4316s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.1355s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0605s ]
+SQL: SELECT * FROM `blog_post` WHERE `cat_id` <> 28 ORDER BY ctime desc LIMIT 10   [ RunTime:0.3400s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '42' ORDER BY t.count desc  [ RunTime:0.2965s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '41' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '36' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '35' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '34' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '33' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '32' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '31' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '30' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '29' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog_cat` [ RunTime:0.2515s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 28  [ RunTime:0.3315s ]
+SQL: SELECT * FROM `blog_post` WHERE `cat_id` IN ('28') ORDER BY ctime desc LIMIT 4   [ RunTime:0.0150s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('50','46','45','44','43','42')  [ RunTime:0.0275s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '40' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('40','39','38','37','36','35')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '39' ORDER BY t.count desc  [ RunTime:0.0005s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('34','32','31','30','29','28')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '38' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('28','23','24','27','26','25')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '37' ORDER BY t.count desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009501s ]
+
+[ 2016-09-09T14:32:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 42 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-09-09T14:32:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T14:32:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T14:32:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T14:32:34+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T14:32:34+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009501s ]
+
+[ 2016-09-09T14:32:34+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:23:58+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005500s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.4531s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.1145s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0795s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 42 LIMIT 1   [ RunTime:0.0600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021502s ]
+
+[ 2016-09-09T17:23:58+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:23:58+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:23:58+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:23:59+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:23:59+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:23:59+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:24:17+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `blog_post` WHERE `cat_id` <> 28 ORDER BY ctime desc LIMIT 10   [ RunTime:0.1025s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '42' ORDER BY t.count desc  [ RunTime:0.0540s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '41' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '36' ORDER BY t.count desc  [ RunTime:0.0020s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '35' ORDER BY t.count desc  [ RunTime:0.0025s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '34' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '33' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '32' ORDER BY t.count desc  [ RunTime:0.0015s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '31' ORDER BY t.count desc  [ RunTime:0.0015s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '30' ORDER BY t.count desc  [ RunTime:0.0015s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '29' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog_cat` [ RunTime:0.0700s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 28  [ RunTime:0.0565s ]
+SQL: SELECT * FROM `blog_post` WHERE `cat_id` IN ('28') ORDER BY ctime desc LIMIT 4   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('50','46','45','44','43','42')  [ RunTime:0.0255s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '40' ORDER BY t.count desc  [ RunTime:0.0165s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('40','39','38','37','36','35')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '39' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('34','32','31','30','29','28')  [ RunTime:0.0045s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '38' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('28','23','24','27','26','25')  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '37' ORDER BY t.count desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003500s ]
+
+[ 2016-09-09T17:24:39+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0185s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:24:39+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:24:39+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:24:39+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:24:40+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:24:40+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:24:40+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.054007s ]
+
+[ 2016-09-09T17:25:19+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:25:19+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-09-09T17:25:19+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:25:19+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:25:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:25:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-09T17:25:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:26:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-09-09T17:26:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:26:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:26:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:26:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:26:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:26:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:27:35+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-09-09T17:27:36+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:27:36+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:27:36+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:27:37+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:27:37+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:27:37+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-09T17:29:16+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-09-09T17:29:16+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:29:16+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:29:17+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:29:17+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:29:17+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:29:17+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:41+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-09-09T17:30:41+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:30:41+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003501s ]
+
+[ 2016-09-09T17:30:42+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.052006s ]
+
+[ 2016-09-09T17:30:42+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-09-09T17:30:42+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:42+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/3.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/4.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/10.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/11.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/12.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/13.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/14.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/15.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/5.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007501s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/16.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/9.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016502s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/19.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/20.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/21.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/22.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/23.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/24.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/25.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/26.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/27.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/28.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/18.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/29.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/31.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/32.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/33.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/34.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/35.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/36.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/37.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/30.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/38.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/39.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/41.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003500s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/40.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/43.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/44.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/42.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005500s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/46.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/45.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.009001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022003s ]
+
+[ 2016-09-09T17:30:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/47.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/48.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/8.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/17.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/6.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.171022s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/7.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/51.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/52.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/53.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/54.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/55.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/59.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008501s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/49.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.099013s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/57.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/58.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/60.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/56.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/62.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/63.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/64.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/65.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/69.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/66.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/61.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.100012s ]
+
+[ 2016-09-09T17:30:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/67.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/71.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/73.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006501s ]
+
+[ 2016-09-09T17:30:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/50.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/68.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/70.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:30:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/74.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/75.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:30:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/arclist/72.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003500s ]
+
+[ 2016-09-09T17:31:27+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004501s ]
+
+[ 2016-09-09T17:31:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:31:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:31:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:31:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:31:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:31:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:46:47+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002501s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:46:47+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:47+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:47+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:48+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-09T17:46:48+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-09T17:46:48+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/1_%E6%92%87%E5%98%B4.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/2_%E8%89%B2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/7_%E9%97%AD%E5%98%B4.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/9_%E5%A4%A7%E5%93%AD.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/10_%E5%B0%B4%E5%B0%AC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/6_%E5%AE%B3%E7%BE%9E.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016002s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/12_%E8%B0%83%E7%9A%AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/11_%E5%8F%91%E6%80%92.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/13_%E9%BE%87%E7%89%99.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/15_%E9%9A%BE%E8%BF%87.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/16_%E9%85%B7.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/5_%E6%B5%81%E6%B3%AA.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/14_%E6%83%8A%E8%AE%B6.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/17_%E5%86%B7%E6%B1%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/20_%E5%81%B7%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/21_%E5%8F%AF%E7%88%B1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/22_%E7%99%BD%E7%9C%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/23_%E5%82%B2%E6%85%A2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/25_%E5%9B%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/26_%E6%83%8A%E6%81%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/27_%E6%B5%81%E6%B1%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/28_%E6%86%A8%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/29_%E5%A4%A7%E5%85%B5.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/19_%E5%90%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/3_%E5%8F%91%E5%91%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/31_%E5%92%92%E9%AA%82.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/0_%E5%BE%AE%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/30_%E5%A5%8B%E6%96%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/35_%E6%8A%98%E7%A3%A8.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/36_%E8%A1%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/37_%E9%AA%B7%E9%AB%85.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/38_%E6%95%B2%E6%89%93.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/4_%E5%BE%97%E6%84%8F.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/33_%E5%98%98.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/41_%E6%8A%A0%E9%BC%BB.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/42_%E9%BC%93%E6%8E%8C.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/43_%E7%B3%97%E5%A4%A7%E4%BA%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/44_%E5%9D%8F%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/46_%E5%8F%B3%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/47_%E5%93%88%E6%AC%A0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/48_%E9%84%99%E8%A7%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/49_%E5%A7%94%E5%B1%88.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/50_%E5%BF%AB%E5%93%AD%E4%BA%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/39_%E5%86%8D%E8%A7%81.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041005s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/51_%E9%98%B4%E9%99%A9.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/52_%E4%BA%B2%E4%BA%B2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/54_%E5%8F%AF%E6%80%9C.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/55_%E8%8F%9C%E5%88%80.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/53_%E5%90%93.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/56_%E8%A5%BF%E7%93%9C.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/57_%E5%95%A4%E9%85%92.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:54+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/40_%E6%93%A6%E6%B1%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:46:55+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/59_%E4%B9%92%E4%B9%93.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-09-09T17:46:55+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/58_%E7%AF%AE%E7%90%83.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:46:55+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/%E5%BE%97%E6%84%8F%E5%9C%B0%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:55+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/%E5%90%AC%E9%9F%B3%E4%B9%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:46:55+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/81_%E6%8F%A1%E6%89%8B.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:55+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/18_%E6%8A%93%E7%8B%82.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:55+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/78_%E6%8B%A5%E6%8A%B1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:46:55+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/32_%E7%96%91%E9%97%AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:46:55+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/34_%E6%99%95.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-09-09T17:48:34+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/46_%E5%8F%B3%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:48:34+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-09-09T17:48:34+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/47_%E5%93%88%E6%AC%A0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:48:34+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/48_%E9%84%99%E8%A7%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:48:35+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/51_%E9%98%B4%E9%99%A9.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:18+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:49:19+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-09-09T17:49:19+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002501s ]
+
+[ 2016-09-09T17:49:19+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-09-09T17:49:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:25+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//0_%E5%BE%AE%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:25+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//1_%E6%92%87%E5%98%B4.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//3_%E5%8F%91%E5%91%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:49:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//9_%E5%A4%A7%E5%93%AD.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//10_%E5%B0%B4%E5%B0%AC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//11_%E5%8F%91%E6%80%92.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//2_%E8%89%B2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005501s ]
+
+[ 2016-09-09T17:49:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//13_%E9%BE%87%E7%89%99.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.010502s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011502s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//4_%E5%BE%97%E6%84%8F.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007501s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//15_%E9%9A%BE%E8%BF%87.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//12_%E8%B0%83%E7%9A%AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//14_%E6%83%8A%E8%AE%B6.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//18_%E6%8A%93%E7%8B%82.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//19_%E5%90%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//20_%E5%81%B7%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//21_%E5%8F%AF%E7%88%B1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015502s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//16_%E9%85%B7.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//17_%E5%86%B7%E6%B1%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//23_%E5%82%B2%E6%85%A2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//25_%E5%9B%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//22_%E7%99%BD%E7%9C%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//26_%E6%83%8A%E6%81%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//28_%E6%86%A8%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//29_%E5%A4%A7%E5%85%B5.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//30_%E5%A5%8B%E6%96%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005501s ]
+
+[ 2016-09-09T17:49:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//27_%E6%B5%81%E6%B1%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//31_%E5%92%92%E9%AA%82.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//32_%E7%96%91%E9%97%AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//33_%E5%98%98.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//36_%E8%A1%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//37_%E9%AA%B7%E9%AB%85.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//34_%E6%99%95.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//38_%E6%95%B2%E6%89%93.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//35_%E6%8A%98%E7%A3%A8.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//6_%E5%AE%B3%E7%BE%9E.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//5_%E6%B5%81%E6%B3%AA.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//39_%E5%86%8D%E8%A7%81.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//42_%E9%BC%93%E6%8E%8C.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//46_%E5%8F%B3%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//47_%E5%93%88%E6%AC%A0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//48_%E9%84%99%E8%A7%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//49_%E5%A7%94%E5%B1%88.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//41_%E6%8A%A0%E9%BC%BB.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024003s ]
+
+[ 2016-09-09T17:49:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//50_%E5%BF%AB%E5%93%AD%E4%BA%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//7_%E9%97%AD%E5%98%B4.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009502s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//40_%E6%93%A6%E6%B1%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026504s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//52_%E4%BA%B2%E4%BA%B2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//53_%E5%90%93.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//55_%E8%8F%9C%E5%88%80.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//44_%E5%9D%8F%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//56_%E8%A5%BF%E7%93%9C.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//59_%E4%B9%92%E4%B9%93.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//51_%E9%98%B4%E9%99%A9.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//57_%E5%95%A4%E9%85%92.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//58_%E7%AF%AE%E7%90%83.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//78_%E6%8B%A5%E6%8A%B1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//22_%E7%99%BD%E7%9C%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//23_%E5%82%B2%E6%85%A2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//%E5%BE%97%E6%84%8F%E5%9C%B0%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017502s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//25_%E5%9B%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//43_%E7%B3%97%E5%A4%A7%E4%BA%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.071510s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//%E5%90%AC%E9%9F%B3%E4%B9%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//54_%E5%8F%AF%E6%80%9C.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//81_%E6%8F%A1%E6%89%8B.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:32+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:34+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//25_%E5%9B%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:35+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images/24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:38+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//20_%E5%81%B7%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:38+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//23_%E5%82%B2%E6%85%A2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:38+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//22_%E7%99%BD%E7%9C%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-09-09T17:49:38+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images/24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:43+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//25_%E5%9B%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:43+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//26_%E6%83%8A%E6%81%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:43+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//25_%E5%9B%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:44+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//26_%E6%83%8A%E6%81%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single//24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:49:56+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:49:57+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images/face/24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:50:00+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//25_%E5%9B%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:50:00+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images/face/24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:50:02+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//25_%E5%9B%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:50:19+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//28_%E6%86%A8%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:50:19+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//27_%E6%B5%81%E6%B1%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:50:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//26_%E6%83%8A%E6%81%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:50:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//25_%E5%9B%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:50:21+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images/face/24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:50:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//23_%E5%82%B2%E6%85%A2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:50:49+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//29_%E5%A4%A7%E5%85%B5.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:50:49+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//28_%E6%86%A8%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:50:49+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//27_%E6%B5%81%E6%B1%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:50:49+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//26_%E6%83%8A%E6%81%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:50:49+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//25_%E5%9B%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:50:50+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images/face/24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:50:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//25_%E5%9B%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:50:51+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//26_%E6%83%8A%E6%81%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:50:56+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/public/images/face/24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:51:42+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//29_%E5%A4%A7%E5%85%B5.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:51:45+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/photo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `blog_cat` [ RunTime:0.0070s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 28  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_post` WHERE `cat_id` IN ('28') LIMIT 1   [ RunTime:0.0655s ]
+SQL: SELECT `cat_id` FROM `blog_cat` WHERE `parent_id` = 28  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_post` WHERE `cat_id` IN ('28') ORDER BY ctime desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('50','46','45','44','43','42')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '40' ORDER BY t.count desc  [ RunTime:0.0020s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('40','39','38','37','36','35')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '39' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('34','32','31','30','29','28')  [ RunTime:0.0010s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '38' ORDER BY t.count desc  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('28','23','24','27','26','25')  [ RunTime:0.0005s ]
+SQL: SELECT t.tag_id,t.tagname FROM `blog_tag`  as t left join blog_post_rel_tag as pt on t.tag_id=pt.tag_id  WHERE `post_id` = '37' ORDER BY t.count desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\5f51b6bf2b9aae0788abf66ffabc3875.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:52:24+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/photoDetail/id/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name`,`savepath` FROM `blog_file` WHERE `id` IN ('28','23','24','27','26','25')  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\fc9841532c83a7e0c782a0c17f5c8f10.php 第 99 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\fc9841532c83a7e0c782a0c17f5c8f10.php 第 99 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\fc9841532c83a7e0c782a0c17f5c8f10.php 第 99 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\fc9841532c83a7e0c782a0c17f5c8f10.php 第 99 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\fc9841532c83a7e0c782a0c17f5c8f10.php 第 99 行.
+NOTIC: [8] Use of undefined constant imagesDir - assumed 'imagesDir' E:\phpStudy\WWW\ingblog_home\App\Runtime\Cache\Home\fc9841532c83a7e0c782a0c17f5c8f10.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006501s ]
+
+[ 2016-09-09T17:53:46+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:02+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:02+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//25_%E5%9B%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:09+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//46_%E5%8F%B3%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:54:09+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//48_%E9%84%99%E8%A7%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:09+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//47_%E5%93%88%E6%AC%A0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-09T17:54:14+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//47_%E5%93%88%E6%AC%A0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:18+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/48_%E9%84%99%E8%A7%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:19+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//46_%E5%8F%B3%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:19+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//47_%E5%93%88%E6%AC%A0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:54:21+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//43_%E7%B3%97%E5%A4%A7%E4%BA%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002501s ]
+
+[ 2016-09-09T17:54:21+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//46_%E5%8F%B3%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:21+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images//50_%E5%BF%AB%E5%93%AD%E4%BA%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:27+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0245s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:54:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:54:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-09-09T17:54:28+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004501s ]
+
+[ 2016-09-09T17:54:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:54:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:29+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/0_%E5%BE%AE%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/1_%E6%92%87%E5%98%B4.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/7_%E9%97%AD%E5%98%B4.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/6_%E5%AE%B3%E7%BE%9E.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/4_%E5%BE%97%E6%84%8F.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003501s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/2_%E8%89%B2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/11_%E5%8F%91%E6%80%92.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/9_%E5%A4%A7%E5%93%AD.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/10_%E5%B0%B4%E5%B0%AC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/14_%E6%83%8A%E8%AE%B6.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/15_%E9%9A%BE%E8%BF%87.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/16_%E9%85%B7.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/17_%E5%86%B7%E6%B1%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002501s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/19_%E5%90%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/20_%E5%81%B7%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/18_%E6%8A%93%E7%8B%82.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/22_%E7%99%BD%E7%9C%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/23_%E5%82%B2%E6%85%A2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/24_%E9%A5%A5%E9%A5%BF.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/25_%E5%9B%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/13_%E9%BE%87%E7%89%99.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/27_%E6%B5%81%E6%B1%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/28_%E6%86%A8%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/29_%E5%A4%A7%E5%85%B5.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/30_%E5%A5%8B%E6%96%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/31_%E5%92%92%E9%AA%82.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/32_%E7%96%91%E9%97%AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/33_%E5%98%98.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/26_%E6%83%8A%E6%81%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/5_%E6%B5%81%E6%B3%AA.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/35_%E6%8A%98%E7%A3%A8.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-09-09T17:54:52+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/34_%E6%99%95.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/38_%E6%95%B2%E6%89%93.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/37_%E9%AA%B7%E9%AB%85.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026503s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/39_%E5%86%8D%E8%A7%81.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/36_%E8%A1%B0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/12_%E8%B0%83%E7%9A%AE.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.169022s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/42_%E9%BC%93%E6%8E%8C.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/44_%E5%9D%8F%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/46_%E5%8F%B3%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/21_%E5%8F%AF%E7%88%B1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019002s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/47_%E5%93%88%E6%AC%A0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/48_%E9%84%99%E8%A7%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007501s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/50_%E5%BF%AB%E5%93%AD%E4%BA%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/49_%E5%A7%94%E5%B1%88.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/52_%E4%BA%B2%E4%BA%B2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/53_%E5%90%93.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/51_%E9%98%B4%E9%99%A9.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000501s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019503s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/54_%E5%8F%AF%E6%80%9C.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/55_%E8%8F%9C%E5%88%80.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/56_%E8%A5%BF%E7%93%9C.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/3_%E5%8F%91%E5%91%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/57_%E5%95%A4%E9%85%92.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/78_%E6%8B%A5%E6%8A%B1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/58_%E7%AF%AE%E7%90%83.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/40_%E6%93%A6%E6%B1%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.254032s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/%E5%90%AC%E9%9F%B3%E4%B9%90.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/81_%E6%8F%A1%E6%89%8B.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/41_%E6%8A%A0%E9%BC%BB.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/%E5%BE%97%E6%84%8F%E5%9C%B0%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/43_%E7%B3%97%E5%A4%A7%E4%BA%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:54:53+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/59_%E4%B9%92%E4%B9%93.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009001s ]
+
+[ 2016-09-09T17:55:58+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/50_%E5%BF%AB%E5%93%AD%E4%BA%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:55:58+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/48_%E9%84%99%E8%A7%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:55:58+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/49_%E5%A7%94%E5%B1%88.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:55:58+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/51_%E9%98%B4%E9%99%A9.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-09-09T17:55:58+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/46_%E5%8F%B3%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:00+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:04+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/46_%E5%8F%B3%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:07+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/.face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:08+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/..face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:56:09+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:56:11+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images/face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:56:13+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images/face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:56:13+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/44_%E5%9D%8F%E7%AC%91.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:56:14+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/images/face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:56:16+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/46_%E5%8F%B3%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:16+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/47_%E5%93%88%E6%AC%A0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:56:20+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/im/images/face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:22+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/ing/images/face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:56:22+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/ingbl/images/face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:56:24+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/ingblog_home//images/face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T17:56:27+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/ingblog_home/Public/images/face/45_%E5%B7%A6%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/46_%E5%8F%B3%E5%93%BC%E5%93%BC.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/48_%E9%84%99%E8%A7%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/49_%E5%A7%94%E5%B1%88.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T17:56:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/47_%E5%93%88%E6%AC%A0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:33+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/48_%E9%84%99%E8%A7%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:33+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/42_%E9%BC%93%E6%8E%8C.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002501s ]
+
+[ 2016-09-09T17:56:33+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/41_%E6%8A%A0%E9%BC%BB.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T17:56:33+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/47_%E5%93%88%E6%AC%A0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+
+[ 2016-09-09T17:56:49+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/48_%E9%84%99%E8%A7%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:49+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/50_%E5%BF%AB%E5%93%AD%E4%BA%86.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:49+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/47_%E5%93%88%E6%AC%A0.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T17:56:49+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/49_%E5%A7%94%E5%B1%88.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:00:35+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/40_%E6%93%A6%E6%B1%97.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+
+[ 2016-09-09T18:00:35+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/face/51_%E9%98%B4%E9%99%A9.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:00:35+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-09-09T18:00:36+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T18:00:36+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:00:37+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-09-09T18:00:38+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:00:38+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T18:00:38+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033505s ]
+
+[ 2016-09-09T18:01:30+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0255s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2016-09-09T18:01:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T18:01:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T18:01:31+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T18:01:32+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T18:01:32+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:01:32+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T18:03:00+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T18:03:01+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T18:03:02+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:03:02+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:03:03+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-09T18:03:03+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:03:03+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T18:05:05+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T18:05:06+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:05:06+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T18:05:06+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:05:08+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-09T18:05:08+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:05:08+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:05:32+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `blog_post` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `blog_file` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `blog_tag` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `blog_post` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:05:32+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T18:05:32+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:05:33+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-09-09T18:05:38+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/b1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-09-09T18:05:38+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-09T18:05:38+08:00 ] 127.0.0.1 /ingblog_home/Home/Index/single/id/images/si.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+

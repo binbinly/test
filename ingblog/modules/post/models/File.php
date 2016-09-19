@@ -53,7 +53,7 @@ class File extends \yii\db\ActiveRecord
         $page_size = 40;
         $p = Yii::$app->request->get('p', 1);
         $offset = ($p-1)*$page_size;
-        $query = File::find()->where(['type'=>1]);
+        $query = File::find()->where(['type'=>1])->orderBy('ctime desc');
         $count = $query->count();
         $pagination = new Pagination(['totalCount' => $count]);
         $pagination->defaultPageSize = $page_size;

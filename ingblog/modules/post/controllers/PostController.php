@@ -73,9 +73,13 @@ class PostController extends UserBaseController
             }
         }
 
-        if ($model->load(Yii::$app->request->post()) && $model->add()) {
-            Yii::$app->getSession()->setFlash('success','更新成功');
-            return $this->render('index');
+        if(Yii::$app->request->post()) {
+            if ($model->load(Yii::$app->request->post()) && $model->add()) {
+                Yii::$app->getSession()->setFlash('success', '更新成功');
+                return $this->refresh();
+            }else{
+                Yii::$app->getSession()->setFlash('error', '更新失败');
+            }
         }
         $post_id = Yii::$app->request->get('id');
         $post_info = null;

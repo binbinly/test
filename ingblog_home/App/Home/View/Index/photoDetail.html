@@ -1,0 +1,133 @@
+<include file="Public/header" />
+<!--header start here-->
+<!-- NAVBAR
+==================================================-->
+<include file="Public/nav" />
+<!--header end here-->
+<!--gallery-->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/gallerybox.css">
+
+<style type="text/css">
+	#gallery-wrapper {
+		position: relative;
+		width: 100%;
+		margin:20px auto;
+	}
+	img.gallerybox {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+	.white-panel {
+		position: absolute;
+		background: white;
+		border-radius: 5px;
+		box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+		padding: 10px;
+	}
+	.white-panel h1 {
+		font-size: 1em;
+	}
+	.white-panel h1 a {
+		color: #A92733;
+	}
+	.white-panel:hover {
+		box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+		margin-top: -5px;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+</style>
+<div class="single">
+	<div class="container">
+		<div class="single-top">
+			<p class="h4 nav-html">{$navHtml}</p>
+			<div class=" single-grid wow slideInRight" data-wow-delay="0.3s">
+				<div class="h4 text-center">{$info.title}</div>
+				<ul class="blog-ic text-center">
+					<li><a href="#"><span> <i  class="glyphicon glyphicon-user"> </i>作者：{$info.author}</span> </a> </li>
+					<li><span><i class="glyphicon glyphicon-time"> </i>时间：{$info.ctime|date="Y-m-d",###}</span></li>
+					<li><span><i class="glyphicon glyphicon-eye-open"> </i>浏览：{$info.click_count}</span></li>
+				</ul>
+			</div>
+			<section id="gallery-wrapper" class="wrapper">
+				<foreach name="info.file" item="item">
+				<article style="width: 256.75px; left: 0px; top: 0px;" class="white-panel r1 c0">
+					<img style="cursor: pointer;" src="{$item.savepath|getTypeFileUrl=imagesDir,'min'}" class="thumbnail gallerybox">
+				</article>
+				</foreach>
+			</section>
+			<div class="row">
+				<if condition="$prev">
+				<div class="prev col-sm-6">上一篇：<a href="{:U('single', array('id'=>$prev['id']))}">{$prev.title}</a></div>
+				</if>
+				<if condition="$next">
+				<div class="next col-sm-6 text-right"><a href="{:U('single', array('id'=>$next['id']))}">{$next.title}</a>：下一篇</div>
+				</if>
+			</div>
+			<include file="comment" />
+
+		</div>
+	</div>
+</div>
+<script src="__PUBLIC__/js/pinterest_grid.js"></script>
+<script src="__PUBLIC__/js/images.js"></script>
+<script type="text/javascript">
+	//瀑布流插件
+	$(function(){
+		$("#gallery-wrapper").pinterest_grid({
+			no_columns: 4,
+			padding_x: 10,
+			padding_y: 10,
+			margin_bottom: 50,
+			single_column_breakpoint: 700
+		});
+		loadImages();
+
+	});
+	//滚动滚动条的时候调用的事件
+	var scrollH = '';//可视区高度
+	var scrollT = '';//滚动条高度
+	var _height = 0;
+	var page = 2;
+	var is_load = 0;
+	$(window).scroll(function(){
+		_height = parseInt($("#gallery-wrapper").height() + $("#gallery-wrapper").position().top);
+		scrollH = $(window).height();
+		scrollT = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+		if(_height - scrollH<scrollT && is_load == 0){
+			load();
+			is_load = 1;
+		}
+	});
+	function load() {
+		var url = "{:U('ajaxGetPhotoList')}";
+		var post_id = '{$info.id}';
+		$.post(url, {id:post_id, p:page}, function(data){
+			if(data.code == 1) {
+				$.each(data.data, function(k, v){
+					var html = '<article class="white-panel r1 r3 c1" style="opacity:0"> ' +
+							'<img class="thumbnail gallerybox" src="'+ v.savepath+'" style="cursor: pointer;"> ' +
+							'</article>';
+					$("#gallery-wrapper").append(html);
+					$("#gallery-wrapper article").fadeTo(1000, 1);
+				});
+				page = ++data.p;
+				is_load = 0;
+				loadImages();
+			}else{
+				layer.msg(data.msg);
+			}
+		}, 'json');
+	}
+	function loadImages(){
+		$(".gallerybox").gallerybox({
+			bgColor:"#000",
+			bgOpacity:0.85
+		});
+	}
+</script>
+
+<include file="Public/footer" />

@@ -61,21 +61,6 @@ a:hover {
     background-color: transparent;
 }
 /*--header end here-*/
-.banner-bottom {
-    background: url(../images/7.jpg)no-repeat center;
-    background-size: cover;
-    min-height: 720px;
-}
-.banner-bottom1 {
-    background: url(../images/6.jpg)no-repeat;
-    background-size: cover;
-    min-height: 720px;
-}
-.banner-bottom2 {
-    background: url(../images/8.jpg)no-repeat;
-    background-size: cover;
-    min-height: 720px;
-}
 .bann-text {
     text-align: left;
 }
@@ -158,7 +143,7 @@ nav a:focus {
 	overflow:hidden;
 }
 .ban-setting img{
-	width:100%;
+	width:100%;height:165px;
 }
 .ban-setting .captn {
     display: inline-block;
@@ -225,29 +210,27 @@ nav a:focus {
     width: 55%;
     margin: 0 auto;
 }
-.fitness-rit {
-    padding: 0em 2em 0em 0em;
-}
 .fitness-rit h4 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
     color: #e68523;
   font-family: 'Amaranth', sans-serif;
 }
-.fitness-rit p {
-    font-size: 0.9em;
+.post_content {
+    font-size: 14px;
     color: #6A6A6A;
-    line-height: 1.9em;
 }
-.fitness-rit a {
+.post_detail a {
     font-size: 0.9em;
     color: #FFF;
     background: #25A7AD;
     padding: 0.6em 1em;
-    margin-top: 1.2em;
     display: inline-block;
 }
-.fitness-rit a:hover{
+.fitness-bottom{
+    padding-bottom:15px;
+}
+.post_detail a:hover{
     background: #e68523;	
 }
 .fitness-lft {
@@ -402,8 +385,8 @@ ul.callbacks_tabs.callbacks1_tabs {
   padding: 4em 0em ;
   background:#202020;
 }
-.ftr-grd h3 {
-  font-size: 2.5em;
+.ftr-grd .h3 {
+  font-size: 2em;
   color:#e68523;
   margin: 0em 0em 0.6em 0em;
   font-family: 'Amaranth', sans-serif;
@@ -415,7 +398,6 @@ ul.callbacks_tabs.callbacks1_tabs {
   font-family: 'Amaranth', sans-serif;
 }
 .ftr-grd p {
-  font-size: 0.95em;
   font-weight: 400;
   color:#BCBCBC;
   line-height: 1.9em;
@@ -431,19 +413,15 @@ ul.callbacks_tabs.callbacks1_tabs {
     font-size: 1em;
     color: #999;
     padding: 0.5em 0.5em;
-    width: 60%;
+    width: 100%;
     border: none;
     outline: none;
 }
 .ftr-grd input[type="submit"] {
-    font-size: 1em;
-    color: #fff;
     background: #25A7AD;
     border: none;
-    padding: 0.52em 1em;
-    margin: 0.9em 0em 0em 0em;
-    outline: none;
-    vertical-align: bottom;
+    margin:0;
+    padding: 0.5em 1em;
 }
 .ftr-grd input[type="submit"]:hover {
   background:#e68523;
@@ -810,7 +788,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 /*--service end here--*/
 /*--singl page start here--*/
-.single-grid h4{
+.single-grid .h4{
 	font-size: 18px;
     margin: 20px 0 0 0;
     color:#e68523;
@@ -828,7 +806,7 @@ ul.callbacks_tabs.callbacks1_tabs {
     line-height: 1.8em;
     margin-top: 1.5%;
 }
-.comments h1,.comment-bottom h2{
+.h1, .h2{
 	font-size:2.5em;
 	color:#000;
 	margin-bottom: 0.5em;
@@ -854,9 +832,9 @@ ul.blog-ic li a:hover{
     width: 80%;
 }
 .single {
-	padding: 6em 0;
+	padding: 20px;
 }
-h4.media-heading {
+.h4 {
     font-size: 18px;
     margin: 0px 0 7px 0;
     color:#e68523;
@@ -873,16 +851,6 @@ h4.media-heading {
     width: 70%;
     margin-top: 3%;
 }
-.comment-bottom input[type="text"],.comment-bottom textarea{
-	width: 100%;
-    margin-bottom: 10px;
-    color:#6A6A6A;
-    font-size: 14px;
-    background: none;
-    padding: 0.8em 1em;
-    outline: none;
-    border: 1px solid #999;
-}
 .comment-bottom textarea{
 	resize:none;
 	height:14em;
@@ -894,14 +862,9 @@ ul.blog-ic li {
 ul.blog-ic {
     margin-top: 10px;
     padding: 0px;
-}	
-.comments h1 {
-    font-size: 2.5em;
-    color: #25A7AD;
-    font-family: 'Amaranth', sans-serif;
 }
-.comment-bottom.heading h2 {
-    font-size: 2.5em;
+.single .h2 {
+    font-size: 2em;
     color: #25A7AD;
     font-family: 'Amaranth', sans-serif;
 }
@@ -912,7 +875,6 @@ ul.blog-ic {
     background: #e68523;
     border: none;
     padding: 0.6em 1.5em;
-    margin: 0.9em 0em 0em 0em;
     outline: none;
 }
 .comment-bottom input[type="submit"]:hover{
@@ -968,6 +930,7 @@ h3.typo1 {
 /*--gallery--*/
 .portfolio-top{
 	text-align:center;
+    padding-bottom:20px;
 }
 .portfolio-top h1 {
     font-size: 3em;
@@ -984,7 +947,7 @@ h3.typo1 {
   line-height: 1.8em;
 }
 .portfolio {
-  padding: 5em 0;
+  padding: 3em 0;
 }
 /******** SAP ************/
 .sap_tabs{
@@ -2294,3 +2257,102 @@ h3.typo1 {
     text-indent: 100%;
     width: 44px;
 }
+.model-dialog-full{width:100%}
+
+.pages
+{
+    padding: 2em 7em;
+}
+.pages div{text-align:center;}
+.pages a, .pages span{
+    margin: 1em 1em 0em 0em;
+    padding: 0.6em 1.1em;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    -moz-border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+    font-size:20px;
+    color:#333;
+    background-color:#F6FAFB;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    font-weight: 800;
+
+}
+.pages a.prev
+{
+    background-position: -68px -8px;
+}
+.pages a.next
+{
+    background-position: -112px -8px;
+}
+.pages a:hover
+{
+    background-color:#25a7ad;
+    color:#fff;
+    text-decoration:none;
+}
+.pages a:nth-child(1)
+{
+    margin-right: 1em;
+}
+.pages a:nth-child(9)
+{
+    margin-left: 3.5em;
+}
+.pages .current{
+    background: #25a7ad;
+    color:#FFF;
+}
+.date {
+    background: #49CBCD;
+    font-size: 0.95em;
+    line-height: 18px;
+    font-weight: 500;
+    padding:1.3em 1em;
+    color: #FFF;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.date span {
+    display: inline-block;
+    font-size:2em;;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.datetime, .tags{
+    font-size:12px;
+    color:#666;
+}
+.post_title a{
+    font-size:20px;
+    color:#e68523;
+}
+.content{padding:10px;}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6{
+    margin:10px 0;
+}
+.nav-html{color:#e68523}
+.nav-html a{
+    font-size:20px;
+    color:#e68523;
+}
+.search_text{font-size:20px;margin:10px 0}
+.size_12{font-size:12px}
+.size_14{font-size:14px}
+.size_16{font-size:16px}
+.size_18{font-size:18px}
+.size_20{font-size:20px}
+.size_22{font-size:22px}
+.size_24{font-size:24px}
+.tag-list a{margin:5px; display:inline-block;font-size:14px;}

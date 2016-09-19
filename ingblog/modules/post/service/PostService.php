@@ -39,7 +39,7 @@ class PostService extends Model
             [['tag_ids','cover_url'], 'string'],
             [['title'], 'string', 'max' => 100],
             [['author'], 'string', 'max' => 12],
-            [['content'], 'string', 'max' => 10000],
+            [['content'], 'string'],
         ];
     }
 

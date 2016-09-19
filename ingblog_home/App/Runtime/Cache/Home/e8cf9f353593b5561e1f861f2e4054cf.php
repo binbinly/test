@@ -7,6 +7,7 @@
     <script src="/ingblog_home/Public/js/jquery-1.11.0.min.js"></script>
     <!-- Custom Theme files -->
     <link href="/ingblog_home/Public/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/ingblog_home/Public/css/style1.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Custom Theme files -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -40,23 +41,12 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?php echo U('index');?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">首页 <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<?php echo U('index');?>">Action</a></li>
-                                <li><a href="<?php echo U('index');?>">Another action</a></li>
-                                <li><a href="<?php echo U('index');?>">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="<?php echo U('index');?>">Separated link</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-
-                        </li>
-                        <li><a href="<?php echo U('about');?>" data-hover="我的相册">我的相册</a></li>
-                        <li><a href="<?php echo U('services');?>" data-hover="Services">Services</a></li>
-                        <li><a href="<?php echo U('shortcodes');?>" data-hover="Shortcodes">Shortcodes</a></li>
-                        <li><a href="<?php echo U('portfolio');?>" data-hover="Portfolio">Portfolio</a></li>
-                        <li><a href="<?php echo U('contact');?>" data-hover="Contact">Contact</a></li>
+                        <li><a href="<?php echo U('index');?>">首页</a></li>
+                        <li><a href="<?php echo U('about');?>">代码分享</a></li>
+                        <li><a href="<?php echo U('services');?>">学无止境</a></li>
+                        <li><a href="<?php echo U('shortcodes');?>">我的相册</a></li>
+                        <li><a href="<?php echo U('portfolio');?>">生活趣事</a></li>
+                        <li><a href="<?php echo U('contact');?>">留言板</a></li>
                     </ul>
                 </div>
                 <div class="clearfix"> </div>

@@ -7,6 +7,7 @@
     <script src="/ingblog_home/Public/js/jquery-1.11.0.min.js"></script>
     <!-- Custom Theme files -->
     <link href="/ingblog_home/Public/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/ingblog_home/Public/css/style1.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Custom Theme files -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -14,6 +15,7 @@
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
     <script src="/ingblog_home/Public/js/bootstrap.min.js"></script>
+    <script src="/ingblog_home/Public/js/layer/layer.js"></script>
     <!--responsive-->
     <script src="/ingblog_home/Public/js/responsiveslides.min.js"></script>
 </head>
@@ -40,23 +42,11 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?php echo U('index');?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">首页 <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<?php echo U('index');?>">Action</a></li>
-                                <li><a href="<?php echo U('index');?>">Another action</a></li>
-                                <li><a href="<?php echo U('index');?>">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="<?php echo U('index');?>">Separated link</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-
-                        </li>
-                        <li><a href="<?php echo U('about');?>" data-hover="我的相册">我的相册</a></li>
-                        <li><a href="<?php echo U('services');?>" data-hover="Services">Services</a></li>
-                        <li><a href="<?php echo U('shortcodes');?>" data-hover="Shortcodes">Shortcodes</a></li>
-                        <li><a href="<?php echo U('portfolio');?>" data-hover="Portfolio">Portfolio</a></li>
-                        <li><a href="<?php echo U('contact');?>" data-hover="Contact">Contact</a></li>
+                        <li><a href="<?php echo U('index');?>">首页</a></li>
+                        <li><a href="<?php echo U('about');?>">代码分享</a></li>
+                        <li><a href="<?php echo U('study');?>">学无止境</a></li>
+                        <li><a href="<?php echo U('photo');?>">青葱留影</a></li>
+                        <li><a href="<?php echo U('contact');?>">留言板</a></li>
                     </ul>
                 </div>
                 <div class="clearfix"> </div>
@@ -183,52 +173,33 @@
 <!--footer start here-->
 <div class="footer">
     <div class="container">
-        <div class="footer-main">
+        <div class="footer-main clearfix">
             <div class="col-md-4 ftr-grd wow zoomIn" data-wow-delay="0.3s">
-                <h3>Get in Touch</h3>
-                <p>8901 ibero  Road</p>
-                <p>Nam libero tempore</p>
-                <p>Phone: +148 5746 415</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="col-md-4 ftr-grd wow zoomIn" data-wow-delay="0.3s">
-                <h3>Recent Post</h3>
-                <div class="ftr-sub-gd">
-                    <div class="col-md-4 ftr-gd1-img">
-                        <a href="single.html"><img src="/ingblog_home/Public/images/f1.jpg" alt="" class="img-responsive"></a>
-                    </div>
-                    <div class="col-md-8 ftr-gd1-text">
-                        <h4><a href="single.html">libero tempore soluta</a></h4>
-                        <p>Lorem Ipsum comes Lorem Ipsum comes</p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="ftr-sub-gd">
-                    <div class="col-md-4 ftr-gd1-img">
-                        <a href="single.html"><img src="/ingblog_home/Public/images/f2.jpg" alt="" class="img-responsive"></a>
-                    </div>
-                    <div class="col-md-8 ftr-gd1-text">
-                        <h4><a href="single.html">voluptas assumenda</a></h4>
-                        <p>No one rejects dislikes it is pleasure</p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="ftr-sub-gd">
-                    <div class="col-md-4 ftr-gd1-img">
-                        <a href="single.html"><img src="/ingblog_home/Public/images/f3.jpg" alt="" class="img-responsive"></a>
-                    </div>
-                    <div class="col-md-8 ftr-gd1-text">
-                        <h4><a href="single.html">dignissimos ducimus</a></h4>
-                        <p>Lorem Ipsum comes Lorem Ipsum comes</p>
-                    </div>
-                    <div class="clearfix"> </div>
+                <div class="h3">标签</div>
+                <div class="tag-list">
+                <?php if(is_array($tagAll)): foreach($tagAll as $key=>$item): ?><a class="label <?php echo (random_style($item["count"])); ?>" href="<?php echo U('search', array('tag'=>$item['tag_id']));?>"><?php echo ($item["tagname"]); ?></a><?php endforeach; endif; ?>
                 </div>
             </div>
             <div class="col-md-4 ftr-grd wow zoomIn" data-wow-delay="0.3s">
-                <h3>Join Our Newsletter</h3>
-                <form>
-                    <input type="text" value="Email"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"/>
-                    <input type="submit" value="Subscribe">
+                <div class=h3>热门文章</div>
+                <?php if(is_array($hot)): foreach($hot as $key=>$item): ?><div class="ftr-sub-gd">
+                    <div class="col-md-4 ftr-gd1-img">
+                        <a href="<?php echo U('single', array('id'=>$item['id']));?>"><img src="<?php echo (getTypeFileUrl($item["cover_url"])); ?>" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-md-8 ftr-gd1-text">
+                        <h4><a href="<?php echo U('single', array('id'=>$item['id']));?>" title="<?php echo ($item["title"]); ?>"><?php echo (msubstr($item["title"],0,15,'utf-8',true)); ?></a></h4>
+                        <p class="post_content"><?php echo (msubstr(strip_tags($item["content"]),0,20,'utf-8',true)); ?></p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div><?php endforeach; endif; ?>
+            </div>
+            <div class="col-md-4 ftr-grd wow zoomIn" data-wow-delay="0.3s">
+                <div class="h3">搜索</div>
+                <form action="<?php echo U('search');?>">
+                <div class="input-group search">
+                    <input type="text" class="form-control" name="word">
+                    <span class="input-group-btn"> <input class="btn btn-primary" type="submit" value="搜索"/> </span>
+                </div>
                 </form>
             </div>
             <div class="clearfix"> </div>

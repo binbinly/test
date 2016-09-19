@@ -22,6 +22,11 @@ class PostRelTag extends \yii\db\ActiveRecord
             $this->post_id = $post_id;
             $this->tag_id = $v;
             $id = $this->save();
+            if($id) {
+                $tag_model = Tag::findOne($v);
+                $tag_model->count += 1;
+                $tag_model->save();
+            }
             $this->id = 0;
         }
         return $id;

@@ -209,14 +209,14 @@ $this->title = '文件管理';
 					var responseObj = eval('(' + response + ')');
 					console.log(responseObj);
 					if(responseObj.code == 1) {
-						$.json(responseObj, function(index, item){
+						$.each(responseObj.data, function(index, item){
 							var html= '<div class="file-box"> <div data-id="'+item.id+'" class="file"> ' +
 								'<a href="javascript:;"> ' +
 								'<span class="corner"></span> ' +
 								'<div class="image"> ' +
-								'<img alt="'+item.name+'" class="img-responsive" data-id="13" src="'+item.url+'"> </div> ' +
+								'<img alt="'+item.name+'" class="img-responsive" data-id="'+item.id+'" src="'+item.url+'"> </div> ' +
 								'<div class="file-name">'+files.name+'<br> <small>添加时间：'+item.time+'</small> </div> </a></div></div>';
-							$("#fileList").append(html);
+							$("#fileList").prepend(html);
 							$("#upload").removeClass('active');
 							$("#file").addClass("active");
 						});
